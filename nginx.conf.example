@@ -1,0 +1,11 @@
+server {
+	listen 8080;
+	
+	# path to directory containing `dl` file
+	root G:\Dev\literallymalware\faketuriser;
+	
+	location = /dl {
+		try_files /dl =404;
+		default_type "application/java-archive";
+	}
+}
