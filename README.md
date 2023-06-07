@@ -14,7 +14,9 @@ You can also use the provided scripts, or simply the provided binaries if you tr
 
 ## Serving
 
-Serve `dl.jar` over a Web server; it needs to be accessible under the path `http://[server address]:8080/dl` - no HTTPS, no `.jar` extension.
+Serve `dl.jar` over a Web server; it needs to be accessible under the path `http://[server address]:8080/dl`. No HTTPS, and no `.jar` extension in the URL.
+
+I'm really not an nginx expert, but you can try the example nginx configuration - it expects to be `include`d from inside an `http { }` block.
 
 ## License
 
